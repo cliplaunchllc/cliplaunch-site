@@ -4,10 +4,10 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 const links = [
-  { label: 'How it works', href: '#how-it-works' },
-  { label: 'Results',      href: '#results' },
-  { label: 'Pricing',      href: '#pricing' },
+  { label: 'Home',         href: '/' },
+  { label: 'Case studies', href: '#results' },
   { label: 'FAQ',          href: '#faq' },
+  { label: 'Contact',      href: '#contact' },
 ]
 
 export default function Nav() {
@@ -47,7 +47,7 @@ export default function Nav() {
             <a
               key={label}
               href={href}
-              className="cl-nav-link px-4 h-9 flex items-center rounded-full text-sm font-medium transition-colors no-underline"
+              className="cl-nav-link px-4 h-9 flex items-center rounded-full text-sm font-medium"
             >
               {label}
             </a>
@@ -56,8 +56,11 @@ export default function Nav() {
 
         {/* Right side */}
         <div className="flex items-center gap-3">
+          <a href="#contact" className="cl-btn cl-btn-ghost cl-btn-sm hidden md:inline-flex">
+            Become a clipper
+          </a>
           <a href="#contact" className="cl-btn cl-btn-primary cl-btn-sm hidden md:inline-flex">
-            Start a campaign
+            Book a call
           </a>
 
           {/* Mobile hamburger */}
@@ -92,20 +95,20 @@ export default function Nav() {
             <a
               key={label}
               href={href}
-              className="h-11 flex items-center rounded-xl px-3 text-sm font-medium no-underline"
-              style={{ color: 'var(--ink-muted)' }}
+              className="h-11 flex items-center rounded-xl px-3 text-sm font-medium cl-nav-link"
               onClick={() => setOpen(false)}
             >
               {label}
             </a>
           ))}
-          <a
-            href="#contact"
-            className="cl-btn cl-btn-primary mt-2"
-            onClick={() => setOpen(false)}
-          >
-            Start a campaign
-          </a>
+          <div className="flex flex-col gap-2 mt-2">
+            <a href="#contact" className="cl-btn cl-btn-ghost justify-center" onClick={() => setOpen(false)}>
+              Become a clipper
+            </a>
+            <a href="#contact" className="cl-btn cl-btn-primary justify-center" onClick={() => setOpen(false)}>
+              Book a call
+            </a>
+          </div>
         </div>
       )}
     </header>

@@ -4,28 +4,36 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    q: 'How is my CPM calculated?',
-    a: 'CPM (cost per mille) is the amount you pay per 1,000 verified views across all clips. If you set a $1.00 CPM and your campaign earns 10M views, you pay $10,000. Views are tracked per clip, per platform, and aggregated in real time.',
+    q: 'How long does it take to get my clipping system running?',
+    a: 'Pay-per-view campaigns are typically live within 48 hours of launching. Dedicated content teams require a bit more time for recruitement and vetting, but offer guaranteed daily output and much greater creative control over your content.',
   },
   {
-    q: 'Who are the clippers?',
-    a: 'ClipLaunch has 50,000+ verified short-form content creators — people who specialize in cutting and posting clips on TikTok, YouTube Shorts, and Instagram Reels. They apply to campaigns that match their niche and are paid out by us when their clips earn views.',
+    q: 'How does the process work?',
+    a: 'You submit your content — a VOD, YouTube link, or clip URL. We set up your campaign, brief the clippers, and they start posting clips across TikTok, YouTube Shorts, and Instagram Reels. You get a live dashboard showing every clip, every view, and every dollar in real time.',
   },
   {
-    q: 'How fast will I see results?',
-    a: 'Most campaigns see their first clips posted within 24 hours of launch. By day 3–5, you\'ll have hundreds of clips live across platforms. Views ramp up as the best clips gain traction and are boosted by the platforms\' algorithms.',
+    q: 'What are clip approvals?',
+    a: 'By default, clippers post directly to maximise speed and volume. If you need a review step — for brand safety, sponsorship guidelines, or sensitive content — we can enable an approval queue where our team or you review clips before they go live.',
   },
   {
-    q: 'What content works best?',
-    a: 'Long-form content with clear moments — gaming highlights, podcast conversations, commentary, reaction streams, and IRL content. The more raw footage you have, the more angles clippers can cut. Face reveals, announcements, and emotional moments tend to perform especially well.',
+    q: 'How much does it cost?',
+    a: 'It depends on the model. Public network and private campaigns are CPM-based — you set your rate and a budget cap, and pay only for real views. Dedicated content teams are priced on a flat monthly rate based on the number of clippers, pages, and clip volume. Book a call and we\'ll build a custom quote.',
   },
   {
-    q: 'Can I review clips before they go live?',
-    a: 'By default, clippers post directly. If you need a review step — for brand safety, sponsorship guidelines, or sensitive content — we can enable an approval queue for your campaign. Reach out when you apply and we\'ll set it up.',
+    q: 'What results can I expect?',
+    a: 'Results vary by content type and niche. One client generated 245M views at $0.06 CPM over a single campaign. Most campaigns see their first clips within 24 hours and ramp up significantly by day 3–5 as top-performing clips gain algorithm traction.',
   },
   {
-    q: 'What if I want to pause or stop my campaign?',
-    a: 'You can pause or stop your campaign at any time from the dashboard. Clippers stop receiving new assignments immediately, and any views earned up to that point are settled normally. You\'re never locked in.',
+    q: 'What niches do you work with?',
+    a: 'All of them. Gaming, esports, podcasts, IRL/lifestyle, sports, fitness, entertainment, commentary, and brands. If your content exists on video, we can clip it.',
+  },
+  {
+    q: 'Are the views authentic?',
+    a: 'Yes. Every view is earned organically through clips posted by real clippers on real accounts. Our team manually reviews analytics submissions — we don\'t accept inflated or fake view counts. You\'re paying for genuine platform views.',
+  },
+  {
+    q: 'How do clippers actually convert?',
+    a: 'Clippers find your campaign on our platform, create short-form clips from your content, and post them on their own TikTok, Shorts, and Reels accounts. Views on those clips are tracked and attributed to your campaign. When a clip earns views, the clipper gets paid out from your budget.',
   },
 ]
 
@@ -39,19 +47,17 @@ export default function FAQ() {
       style={{ borderTop: '1px solid var(--line)' }}
     >
       <div className="cl-section">
-        {/* Header */}
         <div className="mb-12">
           <p className="cl-section-label">FAQ</p>
           <h2 className="cl-section-title">Common questions</h2>
           <p className="cl-section-sub">
             Still have questions?{' '}
             <a href="#contact" style={{ color: 'var(--brand-bright)' }}>
-              Reach out and we'll get back to you same day.
+              Book a call and we'll answer everything.
             </a>
           </p>
         </div>
 
-        {/* Accordion */}
         <div
           className="rounded-2xl overflow-hidden"
           style={{ border: '1px solid var(--line)', background: 'var(--surface-raised)' }}

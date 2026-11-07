@@ -1,8 +1,11 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
-import HowItWorks from './components/HowItWorks'
+import Clients from './components/Clients'
+import Services from './components/Services'
 import Results from './components/Results'
-import Pricing from './components/Pricing'
+import WhyChoose from './components/WhyChoose'
+import About from './components/About'
+import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import ContactCTA from './components/ContactCTA'
 import Footer from './components/Footer'
@@ -13,9 +16,12 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <HowItWorks />
+        <Clients />
+        <Services />
         <Results />
-        <Pricing />
+        <WhyChoose />
+        <About />
+        <Testimonials />
         <FAQ />
         <ContactCTA />
       </main>

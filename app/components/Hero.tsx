@@ -5,66 +5,87 @@ export default function Hero() {
       style={{ paddingBottom: '80px' }}
     >
       <div className="max-w-4xl mx-auto flex flex-col items-center gap-6">
-        {/* Eyebrow */}
+        {/* Trust badge */}
         <span className="cl-pill cl-pill-brand">
           <span className="cl-dot" />
-          Pay-per-view short-form clipping
+          Verified AGENCY on CONTENT REWARDS &nbsp;·&nbsp; 1B+ Views GENERATED
         </span>
 
         {/* Headline */}
         <h1
           style={{
-            fontSize: 'clamp(40px, 6vw, 72px)',
+            fontSize: 'clamp(36px, 5.5vw, 64px)',
             fontWeight: 700,
-            letterSpacing: '-0.035em',
-            lineHeight: 1.0,
+            letterSpacing: '-0.03em',
+            lineHeight: 1.05,
             color: 'var(--ink)',
           }}
         >
-          50,000 clippers.{' '}
-          <br className="hidden sm:block" />
-          Your content.{' '}
-          <span style={{ color: 'var(--brand-bright)' }}>Millions</span> of views.
+          The #1 clipping agency for{' '}
+          <span style={{ color: 'var(--brand-bright)' }}>brands</span> and{' '}
+          <span style={{ color: 'var(--brand-bright)' }}>creators.</span>
         </h1>
 
-        {/* Sub */}
+        {/* Tagline */}
+        <p
+          style={{
+            fontSize: 'clamp(16px, 2vw, 20px)',
+            fontWeight: 600,
+            letterSpacing: '-0.01em',
+            color: 'var(--ink-muted)',
+          }}
+        >
+          Mass clipping distribution that actually converts.
+        </p>
+
+        {/* Body */}
         <p
           className="max-w-2xl"
-          style={{ fontSize: '18px', lineHeight: '28px', color: 'var(--ink-muted)' }}
+          style={{ fontSize: '17px', lineHeight: '27px', color: 'var(--ink-muted)' }}
         >
-          ClipLaunch deploys thousands of verified short-form clippers onto your videos.
-          They create the clips, post them across TikTok, Shorts, and Reels —
-          and you only pay for the views they actually earn.
+          ClipLaunch is the #1 trusted clipping agency for brands powered by our
+          50,000+ clipper network, turning your content into hundreds to thousands
+          of clips that flood every platform.
         </p>
 
         {/* CTAs */}
         <div className="flex flex-wrap items-center justify-center gap-3 mt-2">
-          <a href="#contact" className="cl-btn cl-btn-primary" style={{ height: '52px', fontSize: '16px', padding: '0 32px' }}>
-            Start a campaign
+          <a
+            href="#contact"
+            className="cl-btn cl-btn-primary"
+            style={{ height: '52px', fontSize: '16px', padding: '0 32px' }}
+          >
+            Book a call
           </a>
-          <a href="#how-it-works" className="cl-btn cl-btn-ghost" style={{ height: '52px', fontSize: '16px', padding: '0 32px' }}>
-            See how it works
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+          <a
+            href="#contact"
+            className="cl-btn"
+            style={{ height: '52px', fontSize: '16px', padding: '0 32px' }}
+          >
+            Become a clipper
           </a>
         </div>
 
+        {/* Sub-note */}
+        <p style={{ fontSize: '13px', color: 'var(--ink-subtle)' }}>
+          System live in 24–48 hours
+        </p>
+
         {/* Stats row */}
         <div
-          className="flex flex-wrap items-center justify-center gap-6 mt-6 pt-6 w-full"
+          className="flex flex-wrap items-center justify-center gap-8 mt-4 pt-6 w-full"
           style={{ borderTop: '1px solid var(--line)' }}
         >
           {[
-            { value: '288M+',   label: 'views delivered' },
-            { value: '$0.06',   label: 'avg CPM' },
-            { value: '50,000+', label: 'active clippers' },
-            { value: '2,900+',  label: 'clips per campaign' },
+            { value: '1B+',     label: 'Views generated' },
+            { value: '5/5',     label: 'Stars on Whop' },
+            { value: '50,000+', label: 'Clipper network' },
+            { value: '24–48h',  label: 'System live' },
           ].map(({ value, label }) => (
             <div key={label} className="flex flex-col items-center gap-1">
               <span
                 style={{
-                  fontSize: '24px',
+                  fontSize: '26px',
                   fontWeight: 700,
                   letterSpacing: '-0.03em',
                   fontVariantNumeric: 'tabular-nums',
